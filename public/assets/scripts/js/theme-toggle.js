@@ -19,7 +19,7 @@ function toggleTheme() {
     const currentTheme = themeStyle.getAttribute('href') || '';
     if (isDarkHref(currentTheme)) {
         // Cambiar a tema CLARO
-        themeStyle.setAttribute('href', 'css/lightStyle.css');
+        themeStyle.setAttribute('href', 'assets/styles/css/lightStyle.css');
         themeToggle.innerHTML = '<i class="bi bi-moon-fill" aria-hidden="true"></i>';
         themeToggle.setAttribute('aria-pressed', 'false');
         
@@ -32,7 +32,7 @@ function toggleTheme() {
         localStorage.setItem('theme', 'light');
     } else {
         // Cambiar a tema OSCURO
-        themeStyle.setAttribute('href', 'css/darkStyle.css');
+        themeStyle.setAttribute('href', 'assets/styles/css/darkStyle.css');
         themeToggle.innerHTML = '<i class="bi bi-sun-fill" aria-hidden="true"></i>';
         themeToggle.setAttribute('aria-pressed', 'true');
         
@@ -52,7 +52,7 @@ function ensureThemeLink() {
         themeStyle = document.createElement('link');
         themeStyle.id = 'theme-style';
         themeStyle.rel = 'stylesheet';
-        themeStyle.href = 'css/darkStyle.css'; // Tema por defecto
+        themeStyle.href = 'assets/styles/css/darkStyle.css'; // Tema por defecto
         document.head.appendChild(themeStyle);
         console.info('<link id="theme-style"> sortu da, defektuz darkStyle.css du.');
     }
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Usar el tema guardado si existe
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
-        themeStyle.setAttribute('href', 'css/lightStyle.css');
+        themeStyle.setAttribute('href', 'assets/styles/css/lightStyle.css');
         themeToggle.innerHTML = '<i class="bi bi-moon-fill" aria-hidden="true"></i>';
         themeToggle.setAttribute('aria-pressed', 'false');
         
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     } else {
         // Tema oscuro por defecto
-        themeStyle.setAttribute('href', 'css/darkStyle.css');
+        themeStyle.setAttribute('href', 'assets/styles/css/darkStyle.css');
         themeToggle.innerHTML = '<i class="bi bi-sun-fill" aria-hidden="true"></i>';
         themeToggle.setAttribute('aria-pressed', 'true');
         
