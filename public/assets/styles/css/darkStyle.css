@@ -1,21 +1,23 @@
 :root {
-  --color-primary: #00c6e6;
-  --color-secondary: #253045;
-  --color-accent: #bfc0d1;
+    --color-primary: #00c6e6;
+    --color-primary2: #26d3ee;
 
-  --color-success: #00e6b3;
-  --color-warning: #f2c94c;
-  --color-error: #ff4f5e;
+    --color-secondary: #253045;
+    --color-accent: #bfc0d1;
 
-  --body-bg: #191e2b;
-  --body-color: #bfc0d1;
+    --color-success: #00e6b3;
+    --color-warning: #f2c94c;
+    --color-error: #ff4f5e;
 
-  --heading-color: #00c6e6;
-  --subheading-color: #bfc0d1;
+    --body-bg: #191e2b;
+    --body-color: #bfc0d1;
 
-  --border-color: #253045;
-  --border-light: #bfc0d1;
-  --border-highlight: #00c6e6;
+    --heading-color: #00c6e6;
+    --subheading-color: #bfc0d1;
+
+    --border-color: #253045;
+    --border-light: #bfc0d1;
+    --border-highlight: #00c6e6;
 }
 
 body {
@@ -25,7 +27,12 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--heading-color);
 }
 
@@ -34,11 +41,13 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid var(--border-color);
 }
 
-.navbar-brand, .navbar-nav .nav-link {
+.navbar-brand,
+.navbar-nav .nav-link {
     color: var(--color-accent) !important;
 }
 
-.navbar-brand:hover, .navbar-nav .nav-link:hover {
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
     color: var(--color-primary) !important;
 }
 
@@ -131,7 +140,7 @@ footer a:hover {
     color: var(--color-primary);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--color-accent);
 }
 
@@ -208,4 +217,3 @@ footer a:hover {
     border-color: var(--color-primary);
     color: var(--color-secondary);
 }
-
