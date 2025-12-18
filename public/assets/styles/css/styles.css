@@ -61,6 +61,12 @@
     max-width: 360px; /* a comfortable width so cards look balanced */
 }
 
+#shop-row .card{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
 footer .row {
     justify-content: space-around; /* center columns within footer */
 }
