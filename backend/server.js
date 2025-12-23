@@ -38,7 +38,19 @@ app.get('/health', (req, res) => {
 
 // Manejo de errores 404
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, '../frontend/404.html'));
+    // Si la petición es para la API o acepta JSON, devolver JSON en vez de HTML
+    if (req.originalUrl.startsWith('/api') || req.accepts('json')) {
+        return res.status(404).json({ error: 'Not found', path: req.originalUrl });
+    }
+
+    // Intentar servir 404.html; si falla (archivo inexistente), enviar un texto plano
+    const filePath = path.join(__dirname, '../frontend/404.html');
+    res.status(404).sendFile(filePath, (err) => {
+        if (err) {
+            console.error('No se pudo enviar 404.html:', err.message);
+            res.type('txt').send('404 - Not Found');
+        }
+    });
 });
 
 // Manejo de errores generales
