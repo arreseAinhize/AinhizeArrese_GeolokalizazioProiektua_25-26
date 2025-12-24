@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../assets/styles/css/lightStyle.css" id="theme-style">
     <!-- CSS for aditional styles -->
     <link rel="stylesheet" href="../assets/styles/css/styles.css">
+        <!-- MapLibre GL JS CSS (open-source WebGL maps) -->
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -86,6 +88,44 @@
     <!-- Main content -->
     <main class="main-content">
         <div class="container my-5">
+<<<<<<< Updated upstream:public/esp/kokapena.html
+=======
+            <!-- Filter section -->
+            <div class="row mb-4">
+                <!-- Legend -->
+                <div class="row mb-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Significado de los iconos</h6>
+                                <div class="d-flex flex-wrap">
+                                    <div class="me-3 mb-2">
+                                        <span style="font-size: 1.5em;">📚</span> Librería
+                                    </div>
+                                    <div class="me-3 mb-2">
+                                        <span style="font-size: 1.5em;">🏛️</span> Biblioteca
+                                    </div>
+                                    <div class="me-3 mb-2">
+                                        <span style="font-size: 1.5em;">🎬</span> Mediateca
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Divider -->
+                <div class="row mb-4"></div>
+
+                <!-- Filter section -->
+                <div class="col-md-4">
+                    <label for="municipio-filter" class="form-label">Seleccionar pueblo</label>
+                    <select class="form-select" id="municipio-filter">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+            </div>
+>>>>>>> Stashed changes:frontend/esp/kokapena.html
             <!-- "Service" section -->
             <div id="map-row" class="row mb-5">
                 <div>
@@ -142,12 +182,17 @@
 
     <!-- Bootstrap 5.3 JS Bundle con Popper -->
     <script src="../assets/scripts/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- MapLibre GL JS -->
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
     <!-- JavaScript para cambiar tema -->
     <script src="../assets/scripts/js/theme-toggle-2.js"></script>
     <!-- JavaScript para funcionalidades adicionales -->
+<<<<<<< Updated upstream:public/esp/kokapena.html
     <script src="../assets/scripts/js/script.js"></script>
 
+=======
+    <script src="../assets/scripts/js/mapa.js"></script>
+>>>>>>> Stashed changes:frontend/esp/kokapena.html
 </body>
 
 </html>
