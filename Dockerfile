@@ -16,9 +16,6 @@ RUN mkdir -p /app/backend /app/frontend
 COPY backend/package*.json /app/backend/
 COPY backend/ /app/backend/
 
-# Copiar archivos del frontend
-COPY frontend/ /app/frontend/
-
 # Instalar dependencias del backend
 WORKDIR /app/backend
 RUN npm install

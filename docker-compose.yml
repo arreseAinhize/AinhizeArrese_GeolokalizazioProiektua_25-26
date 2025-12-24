@@ -41,7 +41,6 @@ services:
       - "${BACKEND_PORT}:${BACKEND_PORT}"
     volumes:
       - ./backend:/app/backend
-      - ./frontend:/app/frontend
     networks:
       - liburugune-network
     command: >
