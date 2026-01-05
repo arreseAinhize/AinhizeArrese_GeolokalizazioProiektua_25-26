@@ -1,9 +1,9 @@
-# 📍🗺️ Durangaldeko liburu denda lokalak
+# Durangaldeko liburu denda, Liburitegi eta Mediateken mapa  // AinhizeArrese_GeolokalizazioProiektua_25-26
 
-# 👩‍💻 EGILEA
+# EGILEA
 - [Ainhize Arrese](https://github.com/arreseAinhize)
 
-# 📑 AURKIBIDEA
+# AURKIBIDEA
 - [Sarrera](#sarrera)
     - [Erabilitako Teknologiak](#erabilitako-teknologiak)
 - [Instalazioa eta Konfigurazioa](#instalazioa-eta-konfigurazioa)
@@ -15,19 +15,19 @@
     - [Etorkizuneko Hobekuntzak](#etorkizuneko-hobekuntzak)
 - [Oharrak](#oharrak)
 
-## 📖 Sarrera
+## Sarrera
 
-Proiektu honek Durangaldeko liburu denda lokalak geolokalizatzeko web aplikazio bat eskaintzen du. Helburua da erabiltzaileei liburu dendak erraz aurkitzeko aukera ematea, mapa interaktibo baten bidez kokapenak bistaratuz eta informazio xehatua eskainiz. Aplikazioak hizkuntza anitzeko euskarria du (euskera, ingelesa eta gaztelania), eta erabiltzaile esperientzia hobetzeko diseinu erantzule eta tema aldakorra (argi/ilun) barne hartzen ditu. Backend-ak API RESTful bat eskaintzen du datuak kudeatzeko, eta guztia Docker containeretan dago kapsulatuta garapen eta ekoizpen inguruneetarako erraztasuna emateko.
+Proiektu honek Durangaldeko liburu denda lokal, liburutegi zein mediatekak geolokalizatzeko web-gune bat eskaintzen du. Helburua erabiltzaileei toki ahuek erraz aurkitzeko aukera ematea da, mapa interaktibo baten bidez kokapenak bistaratuz eta informazio xehatua eskainiz. Web-guneak hizkuntza anitzeko euskarria du (euskera, ingelesa eta gaztelania), eta erabiltzaile esperientzia hobetzeko diseinu erantzule eta "gai" aldakorra (argi/ilun) barne hartzen ditu. Backend-ak API RESTful bat eskaintzen du datuak kudeatzeko, eta guztia Docker containeretan dago kapsulatuta garapen eta ekoizpen inguruneetarako erraztasuna emateko.
 
 
-### 💻 Erabilitako Teknologiak
+### Erabilitako Teknologiak
 
 - **Frontend:**
   - HTML5 eta CSS3 diseinu erantzule eta moderno baterako.
   - JavaScript (ES6+) dinamismoa eta interaktibitatea lortzeko.
   - Bootstrap 5.3.8 (CSS eta JS) interfazea azkar eraikitzeko eta mugikorrentzako optimizatzeko.
   - MapLibre GL JS (WebGL oinarritutako mapa irekia) mapa interaktiboak sortzeko eta geolokalizazioa bistaratzeko.
-  - Tema aldaketa script-ak (argi/ilun) erabiltzaile esperientzia pertsonalizatzeko.
+  - Gai aldaketa script-ak (argi/ilun) erabiltzaile esperientzia pertsonalizatzeko.
 
 - **Backend:**
   - Node.js (Express.js framework-arekin) zerbitzari arina eta azkarra sortzeko.
@@ -44,7 +44,6 @@ Proiektu honek Durangaldeko liburu denda lokalak geolokalizatzeko web aplikazio 
 - **Besteak:**
   - CORS (Cross-Origin Resource Sharing) API eskaerak onartzeko.
   - Cache optimizazioa (Nginx-en bidez) errendimendua hobetzeko.
-  - HTTPS euskarria (konfigurazio gehigarria behar du).
 
 ## Instalazioa eta Konfigurazioa
 
@@ -99,11 +98,11 @@ Fluxu guztian zehar, erabiltzaileak hizkuntza aldatu dezake (euskera, ingelesa, 
 - `GET /motak`: Mota desberdinak lortu.
 - `GET /dendak-geojson`: GeoJSON formatuan dendak lortu.
 
-## ➕ Gehigarriak
+## Gehigarriak
 
 - Mapa interaktiboa dendak geolokalizatzeko.
 - Hizkuntza anitzeko euskarria.
-- Tema dinamikoa (argi/ilun).
+- Gai dinamikoa (argi/ilun).
 - API RESTful backendarekin.
 - Docker containerizazioa garapen eta ekoizpenerako.
 
