@@ -2,6 +2,11 @@
 CREATE DATABASE IF NOT EXISTS liburu_dendak_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE liburu_dendak_db;
 
+-- Asegurar que el usuario tenga el plugin correcto y permisos
+ALTER USER 'liburu_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'liburu_pass';
+GRANT ALL PRIVILEGES ON liburu_dendak_db.* TO 'liburu_user'@'localhost';
+FLUSH PRIVILEGES;
+
 -- Tabla principal
 CREATE TABLE IF NOT EXISTS liburu_dendak (
     id INT AUTO_INCREMENT PRIMARY KEY,

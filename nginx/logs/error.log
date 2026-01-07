@@ -32,3 +32,5 @@
 2025/12/23 11:59:54 [emerg] 1#1: upstream "backend" may not have port 3000 in /etc/nginx/nginx.conf:34
 2025/12/23 12:00:01 [emerg] 1#1: upstream "backend" may not have port 3000 in /etc/nginx/nginx.conf:34
 2025/12/23 12:00:14 [emerg] 1#1: upstream "backend" may not have port 3000 in /etc/nginx/nginx.conf:46
+2026/01/07 21:44:42 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /dendak-geojson HTTP/1.1", upstream: "http://172.19.0.3:3000/dendak-geojson", host: "localhost", referrer: "http://localhost/eus/dendak.html"
+2026/01/07 21:47:44 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /dendak-geojson HTTP/1.1", upstream: "http://172.19.0.3:3000/dendak-geojson", host: "localhost"

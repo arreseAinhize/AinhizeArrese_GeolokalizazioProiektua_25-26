@@ -19,3 +19,6 @@ yarn-error.log*
 # Dependencias que se generan
 dist/
 build/
+
+# Nginx logs
+nginx/logs/
