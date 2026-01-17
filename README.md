@@ -162,6 +162,9 @@ Fluxu guztian zehar, erabiltzaileak hizkuntza aldatu dezake (euskera, ingelesa, 
 
 ## Gehigarriak
 
+- Web-aren erabilera bideoak:
+    - ["Bideo luzea"](https://youtu.be/5u-Cfq-WkGs) (2min)
+    - ["Bideo laburra"](https://youtu.be/4ua6EhkFkWI) (40seg)
 - Mapa interaktiboa dendak geolokalizatzeko.
 - Hizkuntza anitzeko euskarria.
 - Gai dinamikoa (argi/ilun).
